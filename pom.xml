@@ -2,7 +2,7 @@
   <modelVersion>4.0.0</modelVersion>
   <groupId>cho.carbon.fg</groupId>
   <artifactId>cfg-server</artifactId>
-  <version>0.0.18</version>
+  <version>0.0.36</version>
   
   <parent>
 		<groupId>org.springframework.boot</groupId>
@@ -29,7 +29,7 @@
 		<dependency>
 			<groupId>cho.carbon</groupId>
 			<artifactId>fgutil</artifactId>
-			<version>0.0.8</version>
+			<version>0.0.21</version>
 		</dependency>
 
 		<dependency>

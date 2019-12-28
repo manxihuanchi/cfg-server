@@ -261,7 +261,7 @@ public class FgCondition implements Condition{
 		// 类结束标志
 		sb.append("}" +rt);
 		
-		return JavaCompilerFactory.compilerJavaFile(packageName, controllerName, sb.toString().getBytes());
+		return JavaCompilerFactory.compilerJavaFile(packageName, controllerName, sb.toString().getBytes(), true, true);
 	}
 
 	
