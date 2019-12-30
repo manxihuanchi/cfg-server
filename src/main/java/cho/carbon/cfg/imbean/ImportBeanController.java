@@ -6,6 +6,8 @@ import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 import org.springframework.beans.BeansException;
 import org.springframework.beans.factory.BeanFactory;
 import org.springframework.beans.factory.BeanFactoryAware;
@@ -31,6 +33,7 @@ import cho.carbon.utils.JavaCompilerFactory;
 import cho.carbon.utils.MessageDTO;
 
 public class ImportBeanController implements ImportBeanDefinitionRegistrar, BeanFactoryAware, EnvironmentAware {
+	private static final Logger logger = LoggerFactory.getLogger(ImportBeanController.class);
 
 	private Environment environment;
 	private DefaultListableBeanFactory beanFactory = null;
@@ -50,7 +53,8 @@ public class ImportBeanController implements ImportBeanDefinitionRegistrar, Bean
 				 FunctionGroup annotation = clazz.getAnnotation(FunctionGroup.class);
 				 String modelItemCode = annotation.value();
 				int level = annotation.level();
-				String beanName = modelItemCode+level;
+//				String beanName = modelItemCode+level;
+				String beanName = modelItemCode;
 				
 				// 获取当前bean 所有的接口
 				Class<?>[] interfaces = clazz.getInterfaces();

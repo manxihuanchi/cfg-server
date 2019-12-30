@@ -1,4 +1,4 @@
-package choq.carbon.cfg;
+package cho.carbon.cfg;
 
 import org.springframework.boot.context.properties.ConfigurationProperties;
 

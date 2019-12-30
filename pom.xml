@@ -2,7 +2,7 @@
   <modelVersion>4.0.0</modelVersion>
   <groupId>cho.carbon.fg</groupId>
   <artifactId>cfg-server</artifactId>
-  <version>0.0.36</version>
+  <version>0.0.43</version>
   
   <parent>
 		<groupId>org.springframework.boot</groupId>
@@ -59,4 +59,18 @@
 			<scope>test</scope>
 		</dependency>
 	</dependencies>
+	
+	 <repositories>
+		<repository>
+			<id>rdc-releases</id>
+			<name>rdc-releases</name>
+			<url>https://repo.rdc.aliyun.com/repository/105761-release-56eS37/</url>
+		</repository>
+	</repositories>
+	<distributionManagement>
+		<repository>
+			<id>rdc-releases</id>
+			<url>https://repo.rdc.aliyun.com/repository/105761-release-56eS37/</url>
+		</repository>
+	</distributionManagement>
 </project>

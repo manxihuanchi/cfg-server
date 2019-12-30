@@ -8,7 +8,7 @@ import java.lang.annotation.Target;
 
 import org.springframework.context.annotation.Import;
 
-import choq.carbon.cfg.FGServerConfiguration;
+import cho.carbon.cfg.FGServerConfiguration;
 
 @Target({ElementType.TYPE})
 @Retention(RetentionPolicy.RUNTIME)
